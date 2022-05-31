@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background: hsl(216, 50%, 16%);
+  width: 310px;
+  padding: 1em 15px;
+  box-shadow: 0px 20px 20px hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+
+.card_upper_layer > img {
+  width: 280px;
+  border-radius: 10px;
+}
+
+.card_upper_layer:hover {
+  cursor: pointer;
+  filter: opacity(0.5);
+}
+
+.card_icon_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.card_icon {
+  display: none;
+  z-index: 99;
+  width: 50px;
+}
+
+.card_upper_layer:hover .card_icon {
+  display: inline;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  cursor: pointer;
+}
+
+.card_upper_layer:hover {
+  /*  background: linear-gradient(hsl(178, 100%, 50%), hsl(178, 100%, 50%)); */
+  z-index: 9999;
+  border-radius: 10px;
+}
+
+.card_lower_layer > h1 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.card_lower_layer > h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.card_lower_layer > p {
+  color: hsl(215, 51%, 70%);
+  padding-top: 1.2em;
+}
+
+.card_details_section {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_details_section > h2 {
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+.card_price {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card_duration {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card_author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card_author > img {
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.card_author {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+.minor {
+  color: #fff;
+}
+
+.minor:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
